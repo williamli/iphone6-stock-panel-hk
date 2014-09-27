@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>iPhone 6 Availability Panel - 54 iPhone 6 / store configurations all in one place</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,76 +21,759 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        
+        <!--<link rel="stylesheet" href="css/jquery.dataTables.css"/>-->
+        
+        <link rel="stylesheet" href="css/dataTables.bootstrap.css"/>
+        
+        
+        <script>
+        	//R485 Festival Walk
+        	//R409 Causeway Bay
+        	//R428 IFC Mall
+        	
+        	//MGAF2ZP/A iPhone 6 Plus Gold 128GB $8088
+        	//MG492ZP/A iPhone 6 Gold 16GB $5588
+        	//MGAC2ZP/A iPhone 6 Plus Grey 128GB $8088
+        	//MGA92ZP/A iPhone 6 Plus Silver 16GB $6388
+        	//MG4F2ZP/A iPhone 6 Grey 64GB $6388
+        	//MG472ZP/A iPhone 6 Grey 16GB $5588
+        	//MG4A2ZP/A iPhone 6 Grey 128GB $7188
+    	    //MGAK2ZP/A iPhone 6 Plus Silver 64GB $7188
+    	    //MGAA2ZP/A iPhone 6 Plus Gold 16GB $6388
+    	    //MG4J2ZP/A iPhone 6 Gold 64GB $6388
+    	    //MGAJ2ZP/A iPhone 6 Plus Silver 64GB $7188
+    	    //MG4H2ZP/A iPhone 6 Silver 64GB $6388
+    	    //MGAE2ZP/A iPhone 6 Plus Silver 128GB $8088
+    	    //MG4E2ZP/A iPhone 6 Gold 128GB $7188
+    	    //MG482ZP/A iPhone 6 Silver 16GB $5588
+    	    //MGAH2ZP/A iPhone 6 Plus Grey 64GB $7188
+    	    //MG4C2ZP/A iPhone 6 Silver 128GB $7188
+    	    //MGA82ZP/A iPhone 6 Plus Grey 16GB $6388
+    	    
+    	    
+        	
+        	
+        	
+        	
+        	
+        	var stock = [
+	        		//R485
+        	
+        			//MGAF2ZP/A iPhone 6 Plus Gold 128GB $8088
+        	    {
+        	        "model_id": "MGAF2ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "128GB",
+        	        "price": "$8088",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MG492ZP/A iPhone 6 Gold 16GB $5588
+        	    {
+        	        "model_id": "MG492ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "16GB",
+        	        "price": "$5588",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MGAC2ZP/A iPhone 6 Plus Grey 128GB $8088
+        	    {
+        	        "model_id": "MGAC2ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "128GB",
+        	        "price": "$8088",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MGA92ZP/A iPhone 6 Plus Silver 16GB $6388
+        	    {
+        	        "model_id": "MGA92ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "16GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4F2ZP/A iPhone 6 Grey 64GB $6388
+        	    {
+        	        "model_id": "MG4F2ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "64GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MG472ZP/A iPhone 6 Grey 16GB $5588
+        	    {
+        	        "model_id": "MG472ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "16GB",
+        	        "price": "$5588",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4A2ZP/A iPhone 6 Grey 128GB $7188
+        	    {
+        	        "model_id": "MG4A2ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "128GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGAK2ZP/A iPhone 6 Plus Silver 64GB $7188
+        	    {
+        	        "model_id": "MGAK2ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "64GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGAA2ZP/A iPhone 6 Plus Gold 16GB $6388
+        	    {
+        	        "model_id": "MGAA2ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "16GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4J2ZP/A iPhone 6 Gold 64GB $6388
+        	    {
+        	        "model_id": "MG4J2ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "64GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGAJ2ZP/A iPhone 6 Plus Silver 64GB $7188
+        	    {
+        	        "model_id": "MGAJ2ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "64GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4H2ZP/A iPhone 6 Silver 64GB $6388
+        	    {
+        	        "model_id": "MG4H2ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "64GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGAE2ZP/A iPhone 6 Plus Silver 128GB $8088
+        	    {
+        	        "model_id": "MGAE2ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "128GB",
+        	        "price": "$8088",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MG4E2ZP/A iPhone 6 Gold 128GB $7188
+        	    {
+        	        "model_id": "MG4E2ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "128GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MG482ZP/A iPhone 6 Silver 16GB $5588
+        	    {
+        	        "model_id": "MG482ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "16GB",
+        	        "price": "$5588",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MGAH2ZP/A iPhone 6 Plus Grey 64GB $7188
+        	    {
+        	        "model_id": "MGAH2ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "64GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4C2ZP/A iPhone 6 Silver 128GB $7188
+        	    {
+        	        "model_id": "MG4C2ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "128GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGA82ZP/A iPhone 6 Plus Grey 16GB $6388
+        	    {
+        	        "model_id": "MGA82ZP/A",
+        	        "store_id": "R485",
+        	        "store" : "Festival Walk",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "16GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //R409
+        	    //MGAF2ZP/A iPhone 6 Plus Gold 128GB $8088
+        	    {
+        	        "model_id": "MGAF2ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "128GB",
+        	        "price": "$8088",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MG492ZP/A iPhone 6 Gold 16GB $5588
+        	    {
+        	        "model_id": "MG492ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "16GB",
+        	        "price": "$5588",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MGAC2ZP/A iPhone 6 Plus Grey 128GB $8088
+        	    {
+        	        "model_id": "MGAC2ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "128GB",
+        	        "price": "$8088",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MGA92ZP/A iPhone 6 Plus Silver 16GB $6388
+        	    {
+        	        "model_id": "MGA92ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "16GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4F2ZP/A iPhone 6 Grey 64GB $6388
+        	    {
+        	        "model_id": "MG4F2ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "64GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MG472ZP/A iPhone 6 Grey 16GB $5588
+        	    {
+        	        "model_id": "MG472ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "16GB",
+        	        "price": "$5588",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4A2ZP/A iPhone 6 Grey 128GB $7188
+        	    {
+        	        "model_id": "MG4A2ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "128GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGAK2ZP/A iPhone 6 Plus Silver 64GB $7188
+        	    {
+        	        "model_id": "MGAK2ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "64GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGAA2ZP/A iPhone 6 Plus Gold 16GB $6388
+        	    {
+        	        "model_id": "MGAA2ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "16GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4J2ZP/A iPhone 6 Gold 64GB $6388
+        	    {
+        	        "model_id": "MG4J2ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "64GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGAJ2ZP/A iPhone 6 Plus Silver 64GB $7188
+        	    {
+        	        "model_id": "MGAJ2ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "64GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4H2ZP/A iPhone 6 Silver 64GB $6388
+        	    {
+        	        "model_id": "MG4H2ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "64GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGAE2ZP/A iPhone 6 Plus Silver 128GB $8088
+        	    {
+        	        "model_id": "MGAE2ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "128GB",
+        	        "price": "$8088",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MG4E2ZP/A iPhone 6 Gold 128GB $7188
+        	    {
+        	        "model_id": "MG4E2ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "128GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MG482ZP/A iPhone 6 Silver 16GB $5588
+        	    {
+        	        "model_id": "MG482ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "16GB",
+        	        "price": "$5588",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MGAH2ZP/A iPhone 6 Plus Grey 64GB $7188
+        	    {
+        	        "model_id": "MGAH2ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "64GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4C2ZP/A iPhone 6 Silver 128GB $7188
+        	    {
+        	        "model_id": "MG4C2ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "128GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGA82ZP/A iPhone 6 Plus Grey 16GB $6388
+        	    {
+        	        "model_id": "MGA82ZP/A",
+        	        "store_id": "R409",
+        	        "store" : "Causeway Bay",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "16GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //R428
+        	    
+        	    //MGAF2ZP/A iPhone 6 Plus Gold 128GB $8088
+        	    {
+        	        "model_id": "MGAF2ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "128GB",
+        	        "price": "$8088",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MG492ZP/A iPhone 6 Gold 16GB $5588
+        	    {
+        	        "model_id": "MG492ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "16GB",
+        	        "price": "$5588",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MGAC2ZP/A iPhone 6 Plus Grey 128GB $8088
+        	    {
+        	        "model_id": "MGAC2ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "128GB",
+        	        "price": "$8088",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MGA92ZP/A iPhone 6 Plus Silver 16GB $6388
+        	    {
+        	        "model_id": "MGA92ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "16GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4F2ZP/A iPhone 6 Grey 64GB $6388
+        	    {
+        	        "model_id": "MG4F2ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "64GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MG472ZP/A iPhone 6 Grey 16GB $5588
+        	    {
+        	        "model_id": "MG472ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "16GB",
+        	        "price": "$5588",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4A2ZP/A iPhone 6 Grey 128GB $7188
+        	    {
+        	        "model_id": "MG4A2ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "128GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGAK2ZP/A iPhone 6 Plus Silver 64GB $7188
+        	    {
+        	        "model_id": "MGAK2ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "64GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGAA2ZP/A iPhone 6 Plus Gold 16GB $6388
+        	    {
+        	        "model_id": "MGAA2ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "16GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4J2ZP/A iPhone 6 Gold 64GB $6388
+        	    {
+        	        "model_id": "MG4J2ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "64GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGAJ2ZP/A iPhone 6 Plus Silver 64GB $7188
+        	    {
+        	        "model_id": "MGAJ2ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "64GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4H2ZP/A iPhone 6 Silver 64GB $6388
+        	    {
+        	        "model_id": "MG4H2ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "64GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGAE2ZP/A iPhone 6 Plus Silver 128GB $8088
+        	    {
+        	        "model_id": "MGAE2ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "128GB",
+        	        "price": "$8088",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MG4E2ZP/A iPhone 6 Gold 128GB $7188
+        	    {
+        	        "model_id": "MG4E2ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour gold'>gold</div>",
+        	        "storage": "128GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MG482ZP/A iPhone 6 Silver 16GB $5588
+        	    {
+        	        "model_id": "MG482ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "16GB",
+        	        "price": "$5588",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    //MGAH2ZP/A iPhone 6 Plus Grey 64GB $7188
+        	    {
+        	        "model_id": "MGAH2ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "64GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MG4C2ZP/A iPhone 6 Silver 128GB $7188
+        	    {
+        	        "model_id": "MG4C2ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6",
+        	        "colour": "<div class='device-colour silver'>silver</div>",
+        	        "storage": "128GB",
+        	        "price": "$7188",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	    
+        	    //MGA82ZP/A iPhone 6 Plus Grey 16GB $6388
+        	    {
+        	        "model_id": "MGA82ZP/A",
+        	        "store_id": "R428",
+        	        "store" : "IFC Mall",
+        	        "model": "iPhone 6 Plus",
+        	        "colour": "<div class='device-colour grey'>grey</div>",
+        	        "storage": "16GB",
+        	        "price": "$6388",
+        	        "available": "<div class='availability false'>false</div>"
+        	    },
+        	];
+        	
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
+    <div id="content">
+	    <!-- Main jumbotron for a primary marketing message or call to action -->
+	    <div class="jumbotron">
+	      <div class="container-fluid">
+	        <div class="row">
+		        <div id="siteTitle" class="col-xs-6">iPhone 6 Availability Panel</div>
+		        <div id="updateTime" class="col-xs-6">TIME</div>
+		       </div>
+	      </div>
+	    </div>
+	
+	    <div class="container-fluid">
+	      
+	      <div class="row">
+	      	<div class="col-xs-12">
+	      		<img src="img/hero.png"/>
+	      	</div>
+	      </div>
+	      
+	      <div class="row">
+		      <div class="col-xs-12">
+	
+		      		<table id="stockPanel" class="col-xs-12">
+		      			<thead>
+		      			        <tr>
+		      			            <th>Model ID</th>
+		      			            <th>Available <i class="glyphicon glyphicon-chevron-up"></i> <i class="glyphicon glyphicon-chevron-down"></i></th>
+		      			            <th>Model <i class="glyphicon glyphicon-chevron-up"></i> <i class="glyphicon glyphicon-chevron-down"></i></th>
+		      			            <th>Colour <i class="glyphicon glyphicon-chevron-up"></i> <i class="glyphicon glyphicon-chevron-down"></i></th>
+		      			            <th>Storage <i class="glyphicon glyphicon-chevron-up"></i> <i class="glyphicon glyphicon-chevron-down"></i></th>
+		      			            <th class="">Price <i class="glyphicon glyphicon-chevron-up"></i> <i class="glyphicon glyphicon-chevron-down"></i></th>
+		      			            
+		      			            <th>Store <i class="glyphicon glyphicon-chevron-up"></i> <i class="glyphicon glyphicon-chevron-down"></i></th>
+		      			        </tr>
+		      			    </thead>
+		      			    <tbody>
+		      			        
+		      			    </tbody>
+		      		</table>
+					</div>
+	      </div>
+	      
+	      
+	      <!--<div class="row">
+	        <div class="col-md-4">
+	          <h2>Heading</h2>
+	          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	        </div>
+	        <div class="col-md-4">
+	          <h2>Heading</h2>
+	          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	       </div>
+	        <div class="col-md-4">
+	          <h2>Heading</h2>
+	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+	          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	        </div>
+	      </div>-->
+	
+	      <hr>
+	
+	      <footer>
+	        <p>&copy; 2014 by 19 Degrees Limited </p>
+	      </footer>
+	    </div> <!-- /container -->
     </div>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; Company 2014</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
+        
+        <script src="js/vendor/jquery.dataTables.js"></script>
+        <script src="js/vendor/dataTables.bootstrap.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -100,6 +783,38 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        
+        <script>
+        	$( document ).ready(function() {
+        	  $('#stockPanel').DataTable( {
+        	  	data: stock,
+        	  	autoWidth: true,
+        	  	iDisplayLength: 25,
+        	  	order: [[ 1, "desc" ]],
+        	  	columns: [
+        	  		{data: 'model_id', visible: false},
+        	  		{data: 'available'},
+        	  		{data: 'model'},
+        	  		{data: 'colour'},
+        	  		{data: 'storage'},
+        	  		{data: 'price', 
+        	  			//sClass: 'hidden-xs'
+        	  		},
+        	  		
+        	  		{data: 'store'}
+        	  	]
+        	  
+        	  });
+        	});
+        	
+        	function reloadData()
+        	{
+        		var t = $('#stockPanel').DataTable();
+        		t.clear();
+        		t.rows.add(stock);
+        		t.draw();
+        	}
         </script>
     </body>
 </html>
