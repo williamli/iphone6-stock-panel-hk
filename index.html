@@ -736,7 +736,7 @@
 		      			            <th>AVBL <i class="glyphicon glyphicon-chevron-up"></i> <i class="glyphicon glyphicon-chevron-down"></i></th>
 		      			            <th>Model <i class="glyphicon glyphicon-chevron-up"></i> <i class="glyphicon glyphicon-chevron-down"></i></th>
 		      			            <th>Colour <i class="glyphicon glyphicon-chevron-up"></i> <i class="glyphicon glyphicon-chevron-down"></i></th>
-		      			            <th>GB <i class="glyphicon glyphicon-chevron-up"></i> <i class="glyphicon glyphicon-chevron-down"></i></th>
+		      			            <th>Size <i class="glyphicon glyphicon-chevron-up"></i> <i class="glyphicon glyphicon-chevron-down"></i></th>
 		      			            <th class="hidden-xs">Price <i class="glyphicon glyphicon-chevron-up"></i> <i class="glyphicon glyphicon-chevron-down"></i></th>
 		      			            
 		      			            <th>Store <i class="glyphicon glyphicon-chevron-up"></i> <i class="glyphicon glyphicon-chevron-down"></i></th>
@@ -803,8 +803,8 @@
         	
         	var quickSearchModel = "";
         	var quickSearchSize = "";
-        	var quickSearchStorage = "";
         	var quickSearchStore = "";
+        	var quickSearchColour = "";
         	
         	$( document ).ready(function() {
         	  $('#stockPanel').DataTable( {
@@ -869,8 +869,16 @@
         	
         	function applyQuickSearch() {
         		var t = $('#stockPanel').DataTable();
-        		t.search(quickSearchModel+" "+quickSearchSize+" "+quickSearchStorage+" "+quickSearchStore+" "+quickSearchColour);
+        		t.search(quickSearchModel+" "+quickSearchSize+" "+quickSearchStore+" "+quickSearchColour);
         		t.draw();
+        	}
+        	
+        	function clearQuickSearch() {
+        		quickSearchModel = "";
+        		quickSearchSize = "";
+        		quickSearchStore = "";
+        		quickSearchColour = "";
+        		applyQuickSearch();
         	}
         	
         	
