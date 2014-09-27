@@ -867,6 +867,12 @@
         		}, 1000);
         	}
         	
+        	function applyQuickSearch() {
+        		var t = $('#stockPanel').DataTable();
+        		t.search(quickSearchModel+" "+quickSearchSize+" "+quickSearchStorage+" "+quickSearchStore+" "+quickSearchColour);
+        		t.draw();
+        	}
+        	
         	
         	function updateStock(data) 
         	{
