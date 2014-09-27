@@ -44,6 +44,7 @@ body {
 
 #stockPanel {
 	text-align: left;
+	
 }
 
 #stockPanel th {
@@ -51,6 +52,7 @@ body {
 	padding: 0px;
 	text-transform: uppercase;
 }
+
 
 
 .glyphicon-chevron-down, .glyphicon-chevron-up {
