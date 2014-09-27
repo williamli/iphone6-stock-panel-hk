@@ -6,10 +6,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>iPhone 6 Availability Panel - 54 iPhone 6 / store configurations all in one place</title>
-        <meta name="description" content="">
+        <title>iPhone 6 Availability Panel - watch over 54 iPhone 6 / store configurations in one panel</title>
+        <meta name="description" content="This panel shows the availability of different iPhone 6 configurations across the three Apple store in Hong Kong. Stop manual refresh with F5 / CMD+R and let this panel do the dirty work.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+				<meta property="og:title" content="iPhone 6 Availability Panel - watch over 54 iPhone 6 / store configurations in one panel">
+				<meta property="og:description" content="This panel shows the availability of different iPhone 6 configurations across the three Apple store in Hong Kong. Stop manual refresh with F5 / CMD+R and let this panel do the dirty work.">
+				
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
@@ -693,7 +695,7 @@
         	
         </script>
     </head>
-    <body>
+    <body onresize="refresh()">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -831,6 +833,14 @@
 	
 	      <footer>
 	        <p>&copy; 2014 by <a target="_blank" href="http://twitter.com/_wli">williamli</a> at <a target="_blank" href="http://19degrees.io">19 Degrees Limited</a>.</p>
+	        <p>
+	        	<iframe src="http://ghbtns.com/github-btn.html?user=williamli&repo=iphone6-stock-panel-hk&type=fork&count=true"
+	        	allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+	        	<iframe src="http://ghbtns.com/github-btn.html?user=williamli&repo=iphone6-stock-panel-hk&type=watch&count=true"
+	          allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe><br/>
+	          <iframe src="http://ghbtns.com/github-btn.html?user=williamli&repo=iphone6-stock-panel-hk&type=follow&count=true"
+	          allowtransparency="true" frameborder="0" scrolling="0" width="150" height="20"></iframe>
+	         </p>
 	      </footer>
 	    </div> <!-- /container -->
     </div>
@@ -899,6 +909,10 @@
         		t.clear();
         		t.rows.add(stock);
         		t.draw();
+        	}
+        	
+        	function refresh() {
+        		location.reload();
         	}
         	
         	var escapedTime = 0;
