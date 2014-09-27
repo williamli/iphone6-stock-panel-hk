@@ -132,3 +132,12 @@ div.dataTables_filter label {
 	float: none;
 	margin-top: 10px;
 }
+
+#quickSearch {
+	text-align: left;
+}
+
+#quickSearch .filters {
+	display:  none;
+	
+}
