@@ -703,7 +703,10 @@
 	      <div class="container-fluid">
 	        <div class="row">
 		        <div id="siteTitle" class="col-xs-6">iPhone 6 Availability Panel</div>
-		        <div id="updateTime" class="col-xs-6">TIME</div>
+		        <div id="updateTimes" class="col-xs-6">
+		        	<div id="apiTime">Data Fetched @ <span class="timestamp">---</span></div>
+		        	<div id="datasetTime">Stock Availability Updated (by Apple) @ <span class="timestamp">---</span></div>
+		        </div>
 		       </div>
 	      </div>
 	    </div>
@@ -774,15 +777,16 @@
         
         <script src="js/vendor/jquery.dataTables.js"></script>
         <script src="js/vendor/dataTables.bootstrap.js"></script>
+        <script src="js/vendor/moment-with-locales.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+//            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+//            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+//            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+//            e.src='//www.google-analytics.com/analytics.js';
+//            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+//            ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
         
         <script>
@@ -821,13 +825,15 @@
         	function updateStock(data) {
         		debug = data;
         		
+        		var isOffline = false;
         		$.each(stock, function(k, v) {
         			try {
         				var available = data[v.store_id][addslashes(v.model_id)];
         			} catch (e) {
         				available = undefined;
+        				isOffline = true;
         			}
-        			if (available === undefined) {
+        			if (isOffline) {
         				v.available = "<div class='availability offline'>offline</div>";
         			} else {
 							  if (available){
@@ -838,12 +844,19 @@
 							  }
 							}
 						});
+						
+						if (!isOffline) {
+							$('#datasetTime .timestamp').html(moment.unix(data['updated']/1000).format('MMMM Do YYYY, HH:mm:ss'));
+						} else {
+							$('#datasetTime .timestamp').html("OFFLINE");
+						}
+						
 						refreshDataTable();
         	}
         	
         	
 
-        	endpoint = "https://reserve.cdn-apple.com/HK/zh_HK/reserve/iPhone/availability.json";
+        	var endpoint = "https://reserve.cdn-apple.com/HK/zh_HK/reserve/iPhone/availability.json";
         	
         	function setEndpoint(type)
         	{
@@ -871,6 +884,7 @@
         		        {
         		            hideLoader();
         		            updateStock(data);
+        		            $('#apiTime .timestamp').html(moment().format('MMMM Do YYYY, HH:mm:ss'));
         		        },
         		        error: function(xhr, ajaxOptions, thrownError)
         		        {

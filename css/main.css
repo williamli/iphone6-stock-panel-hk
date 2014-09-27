@@ -65,10 +65,12 @@ body {
 
 #siteTitle {
 	text-align: left;
+	font-size: 18px;
 }
 
-#updateTime {
+#updateTimes {
 	text-align: right;
+	font-size: 8px;;
 }
 
 .offline {
