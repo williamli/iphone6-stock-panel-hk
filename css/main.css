@@ -122,3 +122,7 @@ body {
 #refreshCountdown {
 	display: none;
 }
+
+div.dataTables_filter label {
+	text-align: left;
+}
