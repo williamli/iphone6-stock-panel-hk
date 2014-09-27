@@ -10,7 +10,6 @@ body {
 	font-weight: 200;
 	text-align: center;
 	
-	
 }
 
 #content {
@@ -20,6 +19,9 @@ body {
 	padding:  10px;
 }
 
+#hero {
+	max-width: 100%;
+}
 
 .jumbotron {
 	background: #FFF;
@@ -67,6 +69,11 @@ body {
 
 #updateTime {
 	text-align: right;
+}
+
+.offline {
+	background: #EEE;
+	color: #666;
 }
 
 .true {
