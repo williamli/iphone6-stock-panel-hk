@@ -71,6 +71,8 @@ body {
 #siteTitle {
 	text-align: left;
 	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
 }
 
 #updateTimes {
