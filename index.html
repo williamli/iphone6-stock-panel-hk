@@ -1039,7 +1039,7 @@
         		        success: function(data)
         		        {
         		            hideLoader();
-        		            updateStock(data);
+        		            updateStock(data.contents);
         		            $('#apiTime .timestamp').html(moment().format('MMM Do, HH:mm:ss'));
         		        },
         		        error: function(xhr, ajaxOptions, thrownError)
