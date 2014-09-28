@@ -979,33 +979,30 @@
         	{
         		//debug = data;
         		
-        		var isOffline = false;
         		$.each(stock, function(k, v) {
         			try {
         				var available = data[v.store_id][v.model_id];
+                        if (available){
+                            v.available = "<div class='availability true'>true</div>";
+                        }
+                        else {
+                            v.available = "<div class='availability false'>false</div>";
+                        }
+                        $('#datasetTime .timestamp').html(moment.unix(data['updated']/1000).format('MMM Do, HH:mm:ss'));
+                        
+
+                        
         			} catch (e) {
-        				available = undefined;
-        				isOffline = true;
-        			}
-        			if (isOffline) {
         				v.available = "<div class='availability offline'>offline</div>";
-        			} else {
-							  if (available){
-							  	v.available = "<div class='availability false'>false</div>";
-							  }
-							  else {
-							  	v.available = "<div class='availability true'>true</div>";
-							  }
-							}
-						});
+
+                        $('#datasetTime .timestamp').html("OFFLINE");
+        			}
+        			
+				});
 						
-						if (!isOffline) {
-							$('#datasetTime .timestamp').html(moment.unix(data['updated']/1000).format('MMM Do, HH:mm:ss'));
-						} else {
-							$('#datasetTime .timestamp').html("OFFLINE");
-						}
 						
-						refreshDataTable();
+						
+				refreshDataTable();
         	}
         	
         	
