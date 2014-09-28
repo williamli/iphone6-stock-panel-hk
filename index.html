@@ -867,7 +867,7 @@
         
         <script>
         	var debug;
-        	var endpoint = "https://reserve.cdn-apple.com/HK/zh_HK/reserve/iPhone/availability.json";
+        	var endpoint = "http://cors-proxy.neon.19degrees.io/ba-simple-proxy.php?url=https%3A%2F%2Freserve.cdn-apple.com%2FHK%2Fzh_HK%2Freserve%2FiPhone%2Favailability.json&full_headers=1&full_status=1";
         	var timer = 30;
         	
         	var quickSearchModel = "";
@@ -1019,7 +1019,7 @@
         		} else if (type == "sample-offline") {
         			endpoint = "sample-availability-offline.json";
         		} else {
-        			endpoint = "https://reserve.cdn-apple.com/HK/zh_HK/reserve/iPhone/availability.json";
+        			endpoint = "http://cors-proxy.neon.19degrees.io/ba-simple-proxy.php?url=https%3A%2F%2Freserve.cdn-apple.com%2FHK%2Fzh_HK%2Freserve%2FiPhone%2Favailability.json&full_headers=1&full_status=1";
         		}
         	}
         	
