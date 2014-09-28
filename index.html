@@ -1029,9 +1029,10 @@
         		
         		$.ajax({
         		        type: 'GET',
-        		        contentType: 'application/json',
+        		        // contentType: 'application/json',
         		        url: endpoint+'?ts='+timestamp(),
-        		        dataType: "json",
+                        crossDomain: 'true',
+        		        dataType: "jsonp",
         		        beforeSend: function(jqXHR, settings)
         		        {
         		            showLoader();
