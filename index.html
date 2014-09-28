@@ -982,7 +982,7 @@
         		var isOffline = false;
         		$.each(stock, function(k, v) {
         			try {
-        				var available = data[v.store_id][addslashes(v.model_id)];
+        				var available = data[v.store_id][v.model_id];
         			} catch (e) {
         				available = undefined;
         				isOffline = true;
